@@ -1,0 +1,209 @@
+@charset "utf-8";
+/* CSS Document */
+.banner-banthan{ min-height: 600px}
+section{ min-height: 700px; padding-top: 80px; width: 100%}
+
+
+
+
+.gioithieungan            { width:90% }
+.gioithieungan:after       { content:'Chào bạn! Mình là Tuấn Long - một chàng trai với khát vọng kiếm tìm những điều xinh xinh trong thế giới bao la này.';}
+.gioithieungan:hover:after { content:'Hi!!!!!!!!! I am Tuan Long - a young boy with the desire to find cute things in this vast world';}
+
+
+.nutbam1            { width:50% }
+.nutbam1:after       { content:'Xem những điều mình tìm thấy'; }
+.nutbam1:hover:after { content:'Click to see my project';}
+
+.nutbam2            { width:40% }
+.nutbam2:after       { content:'Đôi nét về mình'; }
+.nutbam2:hover:after { content:'About me';}
+
+
+/*======================================================*/
+
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============HINH ANH================================*/
+.noidungchusec4 h2{
+    margin: 0;
+    padding-bottom: 15px;
+    color: #fff;
+    transition: 0.5s;
+    transform:translateY(-50px);
+    opacity: 0;
+    visibility: hidden;
+}
+.noidungchusec4 p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    transition: 0.5s;
+    transform:translateY(50px);
+    opacity: 0;
+    visibility: hidden;
+}
+.sec4  .cardlon:hover .noidungchusec4 h2,
+.sec4  .cardlon:hover .noidungchusec4 p{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+
+.cardlon{
+    /* display: flex; */
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1px;
+    width: 32%;
+    width: calc(450px - 10px);
+    height: calc(280px - 10px);
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.cardlon:before
+{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transform: scaleX(0);
+    opacity: 0;
+    z-index: 1;
+}
+
+.cardlon:hover:before{
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+.cardlon:after
+    {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transform: scaleY(0);
+    opacity: 0;
+    z-index: 1;
+    }
+
+.cardlon:hover:after{
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+ .cardlon .hinhsec4{
+    position: relative;
+}
+.cardlon .hinhsec4 img{
+    width: 100%;
+    transition: 0.5s;
+}
+
+.cardlon:hover .hinhsec4 img{
+    opacity: .2;
+    transform: scale(1.2);
+}
+ .cardlon .noidungchusec4{
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+    padding: 0 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+ .cardlon .noidungchusec4 h2{
+    margin: 0;
+    padding-bottom: 15px;
+    color: #fff;
+    transition: 0.5s;
+    transform:translateY(-50px);
+    opacity: 0;
+    visibility: hidden;
+}
+ .cardlon .noidungchusec4 p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    transition: 0.5s;
+    transform:translateY(50px);
+    opacity: 0;
+    visibility: hidden;
+}
+ .cardlon:hover .noidungchusec4 h2,
+ .cardlon:hover .noidungchusec4 p{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+/*====================================================================*/
+
+.testimonial-background{
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.8px);
+-webkit-backdrop-filter: blur(6.8px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
