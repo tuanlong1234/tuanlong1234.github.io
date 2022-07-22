@@ -20,8 +20,47 @@ section{ min-height: 700px; padding-top: 80px; width: 100%}
 .nutbam2:hover:after { content:'About me';}
 
 
+
+
+.abc {
+    /* thêm thông số url đằng sau background image sẽ giúp làm một lớp phủ mờ */
+    /* background-image: linear-gradient(to top right,black,transparent), url('be-oanh3.jpg'); */
+    background-image: linear-gradient(to top,black,transparent), url('"../img/IMG_9595.JPG"');
+    /* background-image: url('be-oanh3.jpg'); */
+    background-repeat: no-repeat; /*không lặp lại hình*/
+    background-attachment:scroll;  /*cuộn theo trang web*/
+    background-size: cover;
+        display: flex;
+    align-items:baseline;
+    height: 90vh;
+/*    background-color: #1F0A00;*/
+    color: white;
+    padding: 5px 50px;
+  }
+
+
+
+
+
+
+
+
+
 /*======================================================*/
 
+
+.full-width-image {
+   width: 100vw;
+   position: relative;
+   left: 50%;  
+   margin-left: -50vw;
+}
+
+.full-width-image img {
+  width: 100%;
+}
+
+/*===================================================*/
 
 
 .tooltip {
@@ -48,18 +87,6 @@ section{ min-height: 700px; padding-top: 80px; width: 100%}
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
